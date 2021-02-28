@@ -12,6 +12,8 @@
   --background-white: rgba(255, 255, 255, 1);
 
   --card-set-gap: 30px;
+
+  --func-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -121,11 +123,17 @@ img {
   margin-left: 50px;
 }
 
+/* .nav-header li {
+  
+} */
+
 .nav-header-item {
   padding-top: 32px;
   padding-bottom: 19px;
 
   color: var(--text-bold-color);
+
+  transition: color 250ms var(--func-cubic);
 }
 
 .nav-header-item:hover,
@@ -154,6 +162,8 @@ img {
   align-items: center;
 
   color: var(--text-main-color);
+
+  transition: color 250ms var(--func-cubic);
 }
 
 .header-contacts-item:hover,
