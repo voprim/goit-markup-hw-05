@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- навигация в верху страницы-->
-    <header>
+    <header class="header-section">
       <div class="container">
         <nav class="nav-logo">
           <a href="./index.html" class="logo-link"
@@ -60,9 +60,33 @@
           <h1 class="tagline-section-title">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button type="button" class="tagline-section-order">
+          <button type="button" class="tagline-section-order" data-modal-open>
             Заказать услугу
           </button>
+        </div>
+
+        <!-- МОДАЛКА -->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+              quis debitis quibusdam doloremque perspiciatis distinctio
+              consequuntur nobis ipsa dolore earum quisquam qui eveniet maxime
+              ad, numquam libero quos, veritatis accusantium similique tempora
+              nemo? Quo consequuntur iusto eius aut facilis doloribus aliquam
+              quae vitae dolor voluptatibus? Accusamus corrupti cumque odio
+              illo.
+            </p>
+            <button type="button" class="button-modal-close" data-modal-close>
+              <div>
+                <svg class="button-modal-close-icon" width="30" height="30">
+                  <use
+                    href="./images/icons/symbol-defs.svg#icon-close-modal"
+                  ></use>
+                </svg>
+              </div>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -129,12 +153,15 @@
         <ul class="busy-section-list">
           <li>
             <img src="./images/pc-graph.jpg" alt="Разработка" />
+            <p>Десктопные приложения</p>
           </li>
           <li>
             <img src="./images/mob-pc.jpg" alt="Приложения" />
+            <p>Мобильные приложения</p>
           </li>
           <li>
             <img src="./images/pocket-color.jpg" alt="Дизайн" />
+            <p>Дизайнерские решения</p>
           </li>
         </ul>
       </section>
@@ -460,5 +487,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
